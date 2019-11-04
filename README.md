@@ -13,6 +13,7 @@
 1. := 可以把变量类型、声明和赋值都搞定了（java里没有，提一下）
 1. var m = make(map[string][]string) ,这种定义方式表示声明、初始化一个map类型的m，key是string，value是[]string，表示slice，大小是动态的。
 1. 交叉编译：CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o logStat main.go
+1. go的权限访问控制是通过首字母是否大小写来声明的
 
 
 欢迎pr，哈哈
