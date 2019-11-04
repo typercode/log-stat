@@ -58,7 +58,7 @@ func (a *app) parseFlags() {
 	f := flag.String("f", "", "set the log file name(eg: Log.log.2019-11-03)")
 
 	//文件名前缀，因为一般的日志都已一个相同的文件前缀，当指定文件名时忽略
-	fp := flag.String("fp", "MSSM-Auth.log.", "set the log file prefix(eg: MSSM-Auth.log.)")
+	fp := flag.String("fp", "MSSM-Auth.log.", "set the log file prefix,Ignore if f is set. (eg: MSSM-Auth.log.)")
 
 	mailList := flag.String("ma", "", "set the mail address (eg: xxx@xxx.com)")
 
