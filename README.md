@@ -12,6 +12,7 @@
 1. 定义、声明未使用的变量，会直接编译报错，包括没有使用到的包，这个在java上深有体会，经常有好多不实用的包、变量，还在代码里，这就是坏味道
 1. := 可以把变量类型、声明和赋值都搞定了（java里没有，提一下）
 1. var m = make(map[string][]string) ,这种定义方式表示声明、初始化一个map类型的m，key是string，value是[]string，表示slice，大小是动态的。
+1. 交叉编译：CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o logStat main.go
 
 ## 未体验到的
 
