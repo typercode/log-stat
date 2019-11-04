@@ -14,6 +14,8 @@
 1. var m = make(map[string][]string) ,这种定义方式表示声明、初始化一个map类型的m，key是string，value是[]string，表示slice，大小是动态的。
 1. 交叉编译：CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o logStat main.go
 
+
+欢迎pr，哈哈
 ## 未体验到的
 
 1. go的并发编程
