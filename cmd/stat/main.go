@@ -35,7 +35,7 @@ func (a *app) genMailContent() (mailContent string) {
 		}
 		mailContent += "\n\n"
 	}
-	fmt.Println("mailContent:")
+	fmt.Println("result:")
 	fmt.Println(mailContent)
 	return
 }
@@ -78,13 +78,12 @@ func (a *app) parseFlags() {
 
 	if *f == "" {
 		format := time.Now().AddDate(0, 0, -1).Format("2006-01-02")
-		fmt.Println(format)
 		filePath = path + "/" + *fp + format
 	} else {
 		filePath = path + "/" + *f
 	}
 
-	fmt.Println("filePath:" + filePath)
+	fmt.Println("filePath: " + filePath)
 	a.filePath = filePath
 }
 
