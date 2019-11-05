@@ -96,7 +96,7 @@ logStat for text file
 
 ## Usage
 
-![编译、运行](https://raw.githubusercontent.com/qiaodaimadelaowang/log-stat/master/resources/go-bulid-%26-run.gif ''编译、运行'')
+![编译、运行](https://raw.githubusercontent.com/qiaodaimadelaowang/log-stat/master/resources/go-bulid-%26-run.gif "编译、运行")
 
 
 
