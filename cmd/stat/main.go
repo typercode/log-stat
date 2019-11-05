@@ -26,8 +26,8 @@ func isIn(l []string, o string) (result bool) {
 	return false
 }
 
-func genMailContent(m map[string][]string) (mailContent string) {
-	for k, v := range m {
+func (a *app) genMailContent() (mailContent string) {
+	for k, v := range a.m {
 		mailContent += "appId: " + k + "\n"
 		mailContent += "api-version-id: "
 		for _, v1 := range v {
@@ -40,13 +40,14 @@ func genMailContent(m map[string][]string) (mailContent string) {
 	return
 }
 
-func sendMail(content string, emailAddress string) {
-
+func (a *app) sendMail(content string) {
+	// 空实现
 }
 
 type app struct {
 	mailList string
 	filePath string
+	m        map[string][]string
 }
 
 func (a *app) parseFlags() {
@@ -62,6 +63,7 @@ func (a *app) parseFlags() {
 
 	mailList := flag.String("ma", "", "set the mail address (eg: xxx@xxx.com)")
 
+	//一定要有Parse，不然上面的flag.xx()都不起作用
 	flag.Parse()
 
 	a.mailList = *mailList
@@ -86,10 +88,8 @@ func (a *app) parseFlags() {
 	a.filePath = filePath
 }
 
-func main() {
-	ap := app{}
-	ap.parseFlags()
-	inputFile, inputError := os.Open(ap.filePath)
+func (a *app) parseLog() {
+	inputFile, inputError := os.Open(a.filePath)
 	if inputError != nil {
 		fmt.Printf("An error occurred on opening the inputfile\n" +
 			"Does the file exist?\n" +
@@ -114,6 +114,7 @@ func main() {
 			index := strings.Index(inputString, lineStart)
 			content := inputString[index+len(lineStart):]
 			content = content[:strings.Index(content, lineEnd)]
+			//fmt.Println(content)
 			appAuthIds := make([]appAuthId, 0)
 			if err := json.Unmarshal([]byte(content), &appAuthIds); err == nil {
 				//如果存在则添加，否则先新建，再添加
@@ -132,5 +133,12 @@ func main() {
 			break
 		}
 	}
-	sendMail(genMailContent(m), ap.mailList)
+	a.m = m
+}
+
+func main() {
+	ap := app{}
+	ap.parseFlags()
+	ap.parseLog()
+	ap.sendMail(ap.genMailContent())
 }
