@@ -77,6 +77,7 @@ func (a *app) parseFlags() {
 	var filePath = ""
 
 	if *f == "" {
+		//如果没有指定文件名称，则默认读取昨天的文件
 		format := time.Now().AddDate(0, 0, -1).Format("2006-01-02")
 		filePath = path + "/" + *fp + format
 	} else {
