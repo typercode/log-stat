@@ -158,7 +158,8 @@ api-version-id: 1,2,
 
 ## 我的学习路线
 
-1. 4、5月份的时候公司搞了一个go培训 讲师的github: https://github.com/bingoohuang 
+1. 2019年4、5月份的时候公司搞了一个go培训 这是讲师的github: https://github.com/bingoohuang 
 1. https://learnxinyminutes.com/docs/zh-cn/lua-cn/
 1. google
 这里面的代码，基本是面向google编程来的。
+1. 官方文档也可以刷一下：https://tour.golang.org 交互式的
