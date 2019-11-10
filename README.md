@@ -162,4 +162,4 @@ api-version-id: 1,2,
 1. https://learnxinyminutes.com/docs/zh-cn/lua-cn/
 1. google
 这里面的代码，基本是面向google编程来的。
-1. 官方文档也可以刷一下：https://tour.golang.org 交互式的
+1. 官方文档也可以刷一下：https://tour.golang.org/list 交互式的
