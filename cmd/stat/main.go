@@ -117,6 +117,9 @@ func (a *app) parseLog() {
 			//fmt.Println(content)
 			appAuthIds := make([]appAuthId, 0)
 			if err := json.Unmarshal([]byte(content), &appAuthIds); err == nil {
+				//When ranging over a slice, two values are returned for each iteration.
+				// The first is the index, and the second is a copy of the element at that index.
+				//https://tour.golang.org/moretypes/16
 				//如果存在则添加，否则先新建，再添加
 				for _, v := range appAuthIds {
 					if !isIn(m[v.AppId], v.ApiVersionId) {
