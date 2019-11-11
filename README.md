@@ -20,6 +20,7 @@
    不然编译报错： xxxFunc redeclared in this package，但是main函数除外。main函数只有在main 包下才能运行，
    package packageName
    这里的packageName可以不跟目录一一对应，但是建议保持一致。
+1. go 里面，函数也可以是值，所以可以出现方法的参数、返回值这些位置，函数也可以是闭包的（https://tour.golang.org/moretypes/25）
 1. 结构体定义、声明、赋值
     ```
     //定义
@@ -84,6 +85,7 @@
 1. web开发
 1. 包管理
 1. 单元测试
+1. 闭包 （https://tour.golang.org/moretypes/25）
 
 
 
@@ -165,3 +167,4 @@ api-version-id: 1,2,
 1. 官方文档也可以刷一下：https://tour.golang.org/list 它是交互式的，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
 尤其对于有编程经验的人来说， 如果这是你的第一门语言，那你也能够大概知道学习一门语言需要了解哪些概念。对于学期其他语言也有指导意义。
 1. 当然还需要熟悉它的类库，第三方类库，不然用起来会不顺手。
+
