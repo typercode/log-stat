@@ -21,6 +21,7 @@
    package packageName
    这里的packageName可以不跟目录一一对应，但是建议保持一致。
 1. go 里面，函数也可以是值，所以可以出现方法的参数、返回值这些位置，函数也可以是闭包的（https://tour.golang.org/moretypes/25）
+   这个时候再去看js的闭包，就比较容易理解了（https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures）
 1. 结构体定义、声明、赋值
     ```
     //定义
