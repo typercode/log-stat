@@ -20,8 +20,8 @@
    不然编译报错： xxxFunc redeclared in this package，但是main函数除外。main函数只有在main 包下才能运行，
    package packageName
    这里的packageName可以不跟目录一一对应，但是建议保持一致。
-1. go 里面，函数也可以是值，所以可以出现方法的参数、返回值这些位置，函数也可以是闭包的（https://tour.golang.org/moretypes/25）
-   这个时候再去看js的闭包，就比较容易理解了（https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures）
+1. go 里面，函数也可以是值，所以可以出现方法的参数、返回值这些位置，函数也可以是[闭包](https://tour.golang.org/moretypes/25 "go的闭包")的
+   这个时候再去看[js的闭包](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures)，就比较容易理解了
 1. 结构体定义、声明、赋值
     ```
     //定义
@@ -86,7 +86,7 @@
 1. web开发
 1. 包管理
 1. 单元测试
-1. 闭包 （https://tour.golang.org/moretypes/25）
+1. [闭包](https://tour.golang.org/moretypes/25)
 
 
 
@@ -161,15 +161,15 @@ api-version-id: 1,2,
 
 ## 我的学习路线
 
-1. 2019年4、5月份的时候公司搞了一个go培训 这是讲师的github: https://github.com/bingoohuang 
-1. https://learnxinyminutes.com/docs/zh-cn/lua-cn/
+1. 2019年4、5月份的时候公司搞了一个go培训 这是讲师的[github](https://github.com/bingoohuang) 
+1. [learnxinyminutes](https://learnxinyminutes.com/docs/zh-cn/lua-cn/)
 1. google
 这里面的代码，基本是面向google编程来的。
-1. 官方文档也可以刷一下：https://tour.golang.org/list 它是交互式的，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
+1. [官方文档](https://tour.golang.org/list)也可以刷一下,它是交互式的，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
 尤其对于有编程经验的人来说， 如果这是你的第一门语言，那你也能够大概知道学习一门语言需要了解哪些概念。对于学习其他语言也有指导意义。
 1. 当然还需要熟悉它的类库，第三方类库，不然用起来会不顺手。
-1. 在看awk时，看到了coolshell上关于go的教程，也贴出来：[https://coolshell.cn/articles/8460.html] [GO 语言简介（上）— 语法] 、[https://coolshell.cn/articles/8489.html] [GO 语言简介（下）— 语法] ，
-   更多go的：[https://coolshell.cn/tag/go] [go相关内容] 。
+1. 在看awk时，看到了[coolshell](https://coolshell.cn/)上关于go的教程，也贴出来：[GO 语言简介（上）— 语法](https://coolshell.cn/articles/8460.html)  、 [GO 语言简介（下）— 语法](https://coolshell.cn/articles/8489.html) ，
+   更多go的tag： [go相关内容](https://coolshell.cn/tag/go) 。
 
 
 
@@ -182,6 +182,6 @@ cat MSSM-Auth.log | grep "AuthenticationController.customerVerify" | grep "{\"me
 
 
 awk简明教程：
-[https://coolshell.cn/articles/9070.html] [awk简明教程]
+[awk简明教程](https://coolshell.cn/articles/9070.html)
 
-附：[awk简明教程]: https://coolshell.cn/articles/9070.html
+附：[awk简明教程](https://coolshell.cn/articles/9070.html)
