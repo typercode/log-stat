@@ -180,8 +180,8 @@ api-version-id: 1,2,
 
 cat MSSM-Auth.log | grep "AuthenticationController.customerVerify" | grep "{\"message\":\"成功\",\"status\":200}" | awk '{print $10}' | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/) { result=result","$i;}}print result}' | sort | uniq
 
-[GO 语言简介（上）— 语法]: https://coolshell.cn/articles/8460.html
 
-[GO 语言简介（下）— 语法]: https://coolshell.cn/articles/8489.html
+awk简明教程：
+[https://coolshell.cn/articles/9070.html][awk简明教程]
 
-[go相关内容]: https://coolshell.cn/tag/go
+[awk简明教程]: https://coolshell.cn/articles/9070.html
