@@ -169,3 +169,11 @@ api-version-id: 1,2,
 尤其对于有编程经验的人来说， 如果这是你的第一门语言，那你也能够大概知道学习一门语言需要了解哪些概念。对于学习其他语言也有指导意义。
 1. 当然还需要熟悉它的类库，第三方类库，不然用起来会不顺手。
 
+
+
+### 后记
+简单的日志统计当然显示不出go的威力
+
+因为一条shell命令也可以做到：
+
+cat MSSM-Auth.log | grep "AuthenticationController.customerVerify" | grep "{\"message\":\"成功\",\"status\":200}" | awk '{print $10}' | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/) { result=result","$i;}}print result}' | sort | uniq
