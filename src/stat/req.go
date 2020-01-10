@@ -75,7 +75,7 @@ func main() {
 	args := args{}
 	args.parseFlags()
 	file := "./req.log"
-	logFile, _ := os.OpenFile(file, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0766)
+	logFile, _ := os.OpenFile(file, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0744)
 	loger = log.New(logFile, "", log.Ldate|log.Ltime|log.Lshortfile)
 	loger.Printf("[Begin] url : %v , frequency : %v\n", args.url, args.frequency)
 	for {
