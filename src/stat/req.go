@@ -48,7 +48,7 @@ func Get(url string, params map[string]string, headers map[string]string) {
 		all, _ := ioutil.ReadAll(resp.Body)
 		if all != nil {
 			strBody := string(all)
-			loger.Printf("Go %s URL : %s ,Body : %s\n", http.MethodGet, req.URL.String(), strBody)
+			loger.Printf("Go %s URL : %s , Body : %s\n", http.MethodGet, req.URL.String(), strBody)
 		} else {
 			loger.Printf("Go %s URL : %s ,result is null\n", http.MethodGet, req.URL.String())
 		}
