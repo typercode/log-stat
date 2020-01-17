@@ -178,7 +178,11 @@ api-version-id: 1,2,
 
 因为一条shell命令也可以做到：
 
+客户鉴权：
 cat MSSM-Auth.log | grep "AuthenticationController.customerVerify" | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/ || $i~/"service-id":/) { result=result","$i;}}print result}' | sort | uniq
+
+平台鉴权：
+cat MSSM-Auth.log | grep "AuthenticationController.platformVerify" | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/ || $i~/"service-id":/) { result=result","$i;}}print result}' | sort | uniq
 
 
 awk简明教程：
