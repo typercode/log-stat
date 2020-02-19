@@ -162,7 +162,7 @@ api-version-id: 1,2,
 ## 我的学习路线
 
 1. 2019年4、5月份的时候公司搞了一个go培训 这是讲师的[github](https://github.com/bingoohuang) 
-1. [learnxinyminutes](https://learnxinyminutes.com/docs/zh-cn/lua-cn/)
+1. [learnxinyminutes](https://learnxinyminutes.com/docs/zh-cn/lua-cn/) ,可以用x分钟过一遍y语言，当然不会很全面
 1. google
 这里面的代码，基本是面向google编程来的。
 1. [官方文档](https://tour.golang.org/list)也可以刷一下,它是交互式的，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
@@ -179,13 +179,17 @@ api-version-id: 1,2,
 因为一条shell命令也可以做到：
 
 客户鉴权：
+```
 cat MSSM-Auth.log | grep "AuthenticationController.customerVerify" | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/ || $i~/"service-id":/) { result=result","$i;}}print result}' | sort | uniq
+```
 
 平台鉴权：
+```
 cat MSSM-Auth.log | grep "AuthenticationController.platformVerify" | awk -F"[=][[]" '{print $2}' | awk -F"[}][]]" '{print $1}' | awk -F"," '{result="";for(i=1;i<=NF;i++){ if($i~/"api-version-id":/ || $i~/"appId":/ || $i~/"service-id":/) { result=result","$i;}}print result}' | sort | uniq
+```
+
+
 
 
 awk简明教程：
 [awk简明教程](https://coolshell.cn/articles/9070.html)
-
-附：[awk简明教程](https://coolshell.cn/articles/9070.html)
