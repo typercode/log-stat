@@ -163,13 +163,12 @@ api-version-id: 1,2,
 
 1. 2019年4、5月份的时候公司搞了一个go培训 这是讲师的[github](https://github.com/bingoohuang) 
 1. [learnxinyminutes](https://learnxinyminutes.com/docs/zh-cn/lua-cn/) ,可以用x分钟过一遍y语言，当然不会很全面
-1. google
-这里面的代码，基本是面向google编程来的。
-1. [官方文档](https://tour.golang.org/list)也可以刷一下,它是交互式的，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
+1. 面向google编程
+1. [Go官方文档](https://tour.golang.org/list)也可以刷一下,它是交互式的，体验很好，在这个页面，你可以看到，go的概念其实蛮少的，所以入手很快，
 尤其对于有编程经验的人来说， 如果这是你的第一门语言，那你也能够大概知道学习一门语言需要了解哪些概念。对于学习其他语言也有指导意义。
 1. 当然还需要熟悉它的类库，第三方类库，不然用起来会不顺手。
-1. 在看awk时，看到了[coolshell](https://coolshell.cn/)上关于go的教程，也贴出来：[GO 语言简介（上）— 语法](https://coolshell.cn/articles/8460.html)  、 [GO 语言简介（下）— 语法](https://coolshell.cn/articles/8489.html) ，
-   更多go的tag： [go相关内容](https://coolshell.cn/tag/go) 。
+1. 其他go教程：[GO 语言简介（上）— 语法](https://coolshell.cn/articles/8460.html)  、 [GO 语言简介（下）— 语法](https://coolshell.cn/articles/8489.html) ，
+   上面其他的go的内容： [go相关内容](https://coolshell.cn/tag/go) 。
 
 
 
@@ -189,7 +188,6 @@ cat MSSM-Auth.log | grep "AuthenticationController.platformVerify" | awk -F"[=][
 ```
 
 
-
-
+上面主要是用到了awk。
 awk简明教程：
 [awk简明教程](https://coolshell.cn/articles/9070.html)
