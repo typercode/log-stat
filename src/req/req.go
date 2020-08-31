@@ -57,7 +57,7 @@ func Get(url string, params map[string]string, headers map[string]string) {
 
 func (a *args) parseFlags() {
 
-	//请求频率 实际请求频率还需要考虑接口的rt，如果rt大雨f，则只能按照rt的时间频率来执行，因为目前是单线程的。
+	//请求频率 实际请求频率还需要考虑接口的rt，如果rt大于f，则只能按照rt的时间频率来执行，因为目前是单线程的。
 	f := flag.Int("f", 10, "frequency eg: 10")
 
 	//请求地址

@@ -88,7 +88,7 @@
 ## 未体验到的
 
 1. go的并发编程
-1. web开发 [推荐一个教程](https://segmentfault.com/a/1190000019151901)
+1. ~~web开发 [推荐一个教程](https://segmentfault.com/a/1190000019151901)~~
 1. 包管理
 1. 单元测试
 1. [闭包](https://tour.golang.org/moretypes/25)
