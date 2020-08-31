@@ -98,6 +98,10 @@
 # logStat
 logStat for text file
 
+统计每个appId的被哪个api-version-id或者service-id请求的情况，具体请看Usage中的动图
+
+
+
 ## Install
 
 `go get github.com/qiaodaimadelaowang/log-stat/...`
